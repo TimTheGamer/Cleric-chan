@@ -1,0 +1,14 @@
+{
+  "name": "Humanoid Interface",
+  "version": "1.0.0",
+  "description": "The Ultimate Cleric of the Holy Church of Haruhiism",
+  "main": "bot.js",
+  "author": "Tim Monague",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "dotenv": "^17.4.2",
+    "fs": "^0.0.1-security",
+    "node-cron": "^4.2.1",
+    "openai": "^6.5.0"
+  }
+}
