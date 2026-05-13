@@ -25,9 +25,9 @@ const noCommReplies = [
 ];
 const fs = require('fs');
 
-const BOTCHANN = 308622744927469570;
-const MODROLE = 307904310006644744;
-const MODERROLE = 749704622154973266;
+//const BOTCHANN = 308622744927469570;
+//const MODROLE = 307904310006644744;
+//const MODERROLE = 749704622154973266;
 
 //commands folder
 client.commands = new Discord.Collection();
@@ -57,7 +57,6 @@ client.on('messageCreate', message => {
     console.log('Command arguments:', args);
 
     const command = client.commands.get(commandName);
-    const noCommReplies = ["I do not have a response to that.", "There is no such command.", "What?"];
     if (!command) {
 	const randomReply = noCommReplies[Math.floor(Math.random() * noCommReplies.length)];
         return message.reply(randomReply);
