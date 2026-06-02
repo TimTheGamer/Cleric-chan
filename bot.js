@@ -48,7 +48,7 @@ client.on('messageCreate', message => {
   try {
     if (message.author.bot) return;
 
-    const usedPrefix = prefixes.find(p => message.content.startsWith(p));
+    const usedPrefix = prefixes.find(p => message.content.toLowerCase().startsWith(p.toLowerCase()));
     if (!usedPrefix) return;
 
     const args = message.content.slice(usedPrefix.length).split(/ +/);
