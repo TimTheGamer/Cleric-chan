@@ -68,6 +68,11 @@ client.on('messageCreate', message => {
   }
 });
 
+const prayerCommand = client.commands.get('prayer');
+if (prayerCommand?.schedule) {
+	prayerCommand.schedule(client);
+}
+
 //welcome
 client.on('guildMemberAdd', member => {
     const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === '1101143116477648957');
