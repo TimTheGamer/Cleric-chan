@@ -30,7 +30,7 @@ module.exports = {
 			console.error('Failed to send the daily prayer:', err);
 		}
 	}, {
-		timezone: 'America/New_York'
+		timezone: 'America/Toronto'
 	});
 	console.log('Prayer scheduler started (9:00 AM America/New_York).');
     }
